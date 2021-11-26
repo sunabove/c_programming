@@ -6,4 +6,5 @@ void main( ) {
     int * pi = & i;
 
     printf( "i = %d, addr = %u \n", i, pi ); 
+    printf( "i = %d, addr = %p \n", i, pi );
 }

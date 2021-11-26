@@ -7,5 +7,5 @@ void main() {
   uint8_t b2 = 1 ;
   uint8_t b3 = b1 + b2 ; 
   
-  printf( "%u + %u = %u \n", b1, b2, b3 ); 
+  printf( "%u + %u = %u \n", b1, b2, b3 );
 }

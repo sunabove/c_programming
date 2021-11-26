@@ -1,13 +1,15 @@
 // File Name : print_text.c
 #include <stdio.h>
+#include <string.h>
 
-int main( ) {
+void main() {
     char c = 'A' ; 
     char * str = "ABCD" ;
     // const char * str = "ABCD" ; 
+    
+    int * i ;
 
-    printf( "c = %d\n", c );
-    printf( "string = %s\n", str );
-
-    return 0 ; 
+    printf( "i = %ld \n", sizeof(i) );
+    printf( "c = %c, %d, %ld \n", c, c, sizeof(c) );
+    printf( "string = %s, %ld, %ld \n", str, strlen(str), sizeof(str) ); 
 }
