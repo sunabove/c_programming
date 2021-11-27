@@ -7,6 +7,6 @@ void main(){
     int * p = a ; 
     for( int i = 0; i < 10 ; i ++ ) {
         printf( "p address = %p, %u \n", p, p );
-        p ++ ;
+        p += 1 ; // p += 1; // p  = p + 1; 
     }
 } 
