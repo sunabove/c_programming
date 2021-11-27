@@ -1,13 +1,14 @@
-// File Name : if.c
+// File Name : str_len.c
 #include <stdio.h>   
 
 void main(){    
-   int number=0;    
-   printf( "Enter a number: " );    
-   scanf( "%d", &number );     
-   if( number%2 == 0 ){    
-       printf( "%d is even number. \n", number );    
-   } else {    
-       printf( "%d is odd number. \n", number );    
+   char * str = "HELLO";
+   char * c = str ;
+   int len = 0 ;  
+   while( *c != 0 ) {
+      print( c ++ ) ; 
+      print( c += 1 ) ;  
+      len ++ ;
    }
+   printf( "len = %d \n", len );
 } 
