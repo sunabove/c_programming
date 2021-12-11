@@ -3,17 +3,15 @@
 #include <string.h>
 
 struct employee {
-   int id ; 
-   char * name ;      
+   int id ;
+   char * name ;
 } ;
 
-void main() {    
-   //store first employee information
-   struct employee e ;     
-   e.id=101;    
-   e.name = "Sonoo Jaiswal" ;
+void main() {
+   struct employee e ;
+   e.id = 101;
+   e.name = "John Doe" ;
         
-   //printing first employee information    
-   printf( "employee 1 id : %d \n", e.id);    
-   printf( "employee 1 name : %s \n", e.name); 
-}  
+   printf( "employee 1 id : %d \n", e.id);
+   printf( "employee 1 name : %s \n", e.name);
+}

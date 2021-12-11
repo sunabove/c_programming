@@ -1,21 +1,21 @@
 // File Name : union.c
 #include <stdio.h>
 
-union abc {  
-   int a;  
+typedef union abc_ {  
+   unsigned int a;  
    char b;   
-} ; 
+} abc ; 
 
 void main() {
-  union abc var ;
+  abc var ;
      
-  var.a = 66;  
+  var.a = 0xFFFFFF00;  
   
   printf("var   sizeof = %lu \n", sizeof(var)   );
   printf("var.a sizeof = %lu \n", sizeof(var.a) );  
   printf("var.b sizeof = %lu \n", sizeof(var.b) ); 
   
   printf("var     address = %p \n",        & var   );
-  printf("a = %d, address = %p \n", var.a, & var.a );  
+  printf("a = %u, address = %p \n", var.a, & var.a );  
   printf("b = %d, address = %p \n", var.b, & var.b ); 
 }   
