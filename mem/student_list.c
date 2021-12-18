@@ -2,8 +2,6 @@
 #include <stdlib.h> 
 #include <string.h>
 
-/* 학생 정보를 입력하여 연결 리스트에 저장하고 학생 정보를 역순으로 출력한다.*/
-
 struct student {
     int id; 
     char name[20]; 
@@ -16,7 +14,7 @@ void main()
     char name[20];
     struct student *p, *head = NULL;
  
-    printf("학번과  이름을 입력하세요\n");
+    printf("Enter the id and name of a student, please!\n");
     
     while( scanf("%d %s", &id, name) == 2) {
         p = (struct student *) malloc(sizeof(struct student));
@@ -30,14 +28,14 @@ void main()
         head = p;
     }
     
-    printf("\n* 학생 정보(역순) *\n");
+    printf("\n* Information of students (descent) *\n");
     p = head;
     while (p != NULL)  {
         count++;
-        printf("학번: %d 이름: %s \n", p->id,  p->name); 
+        printf("id: %d name: %s \n", p->id,  p->name); 
         p = p->next;
     }
-    printf("총 %d 명입니다.\n", count); 
+    printf("\nThere are %d students.\n", count); 
     exit(0);
 }
 
